@@ -19,3 +19,35 @@
                     tags:
                       Name: "Myweb1"
                     wait: yes
+- hosts: "{{ groups.tag_Name_Myweb1 }}"
+  tasks:
+          - name: copy the docker repo file
+            copy:
+                  src: "docker.repo"
+                  dest: "/etc/yum.repos.d/"
+
+          - name: yum repolist
+            command: yum repolist
+            args:
+                    warn: no
+
+          - name: start the docker service
+            service:
+                    name: docker
+                    state: started
+
+          - name: install docker-py
+            pip:
+                    name: docker-py
+
+          - name: Pull docker image from docker hub
+            docker_image:
+                    name: manisha001agrawal/httpd:v1
+                    pull: True
+            ignore_errors: yes
+
+          - name: Launch docker conatainer
+            docker_container:
+                    name: myos1
+                    image: manisha001agrawal/httpd:v1
+            register: y
