@@ -21,8 +21,8 @@ Command for deamon docker service
               "sudo systemctl start docker"                                                                                                                                   
               
 Command for deamon docker service                                                                                                                                             
-              ##### "sudo docker pull manisha001agrawal/httpd:v1"                                                     # pull image from docker hub                                   
-              ##### "sudo docker run -dit -p 81:80 --name os1 manisha001agrawal/httpd:v1"
+                    "sudo docker pull manisha001agrawal/httpd:v1"                                                     # pull image from docker hub                                   
+                    "sudo docker run -dit -p 81:80 --name os1 manisha001agrawal/httpd:v1"
 
 ## Image of webserver:-                                                                                                                                                           
 ![image](https://user-images.githubusercontent.com/67043518/115163104-db681e00-a0c4-11eb-97d2-87165efbbc27.png)
