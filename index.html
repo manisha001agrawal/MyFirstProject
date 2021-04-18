@@ -1,5 +1,79 @@
 <html>
-  <body>
-    <h1>This is my first project</h1>
-  </body>
+    <head>
+        <style>
+        body {
+          background-color: #1F2739;
+        }
+        
+        td {
+          padding-left: 50px;
+        }
+        table{
+            width: 100%;
+            height: 70%;
+            color: #637db9;
+        }
+        a{
+            color:#637db9 ;
+        }
+        a:hover {
+        color: tomato;
+        background-color: transparent;
+        text-decoration: underline;
+        }
+        </style>
+    </head>
+    <body >
+        <div align='center' style="color: aliceblue;" >
+            <h1>Manisha's Projects</h1>
+            <a href="https://www.linkedin.com/in/manisha-agrawal-a11963182/" target="_blank" style="color: rgb(122, 176, 236); ">Linkedln Profile</a>
+        </div>
+        <div>
+            <h2 style="padding-left: 30px; color: rgb(37, 118, 155);">List of the Projects:-</h2>
+        </div>
+        <table align="center" border="2px">
+
+            <tr style="color: rgb(37, 118, 155)">
+                <th style="width: 60%;" >Projects Description</a></th>
+                <th>Technology Used</th>
+                <th>Link</th>
+            </tr>
+
+            <tr>
+                <td>Create High Availability Architecture with AWS CLI <br>
+                    Webserver configured on EC2 Instance<br>
+                    Document Root(/var/www/html) made persistent by mounting on EBS Block Device.<br>
+                    Static objects used in code such as pictures stored in S3<br>
+                    Setting up Content Delivery Network using CloudFront and using the origin domain as S3 bucket.<br>
+                    Finally place the Cloud Front URL on the webapp code for security and low latency.</td>
+                    <td>AWS<br>HTML</td>
+                <td><a  href="https://www.linkedin.com/posts/manisha-agrawal-a11963182_create-high-availability-architecture-with-activity-6746282335353892864-V_fc" target="_blank" >High Availability Architecture</a></td>
+            </tr>
+
+            <tr>
+                <td>Elasticity Stroage<br>Integrating LVM with Hadoop and providing Elasticity to DataNode Storage<br>Increase or Decrease the Size of Static Partition in Linux.</td>
+                <td>Hadoop<br> Linux</td>
+                <td><a  href="https://www.linkedin.com/posts/manisha-agrawal-a11963182_task71-activity-6776211237593341952-AHXy" target="_blank" >Elasticity Stroage</a></td>
+            </tr>
+
+            <tr>
+                <td>Use Ansible playbook to Configure Reverse Proxy i.e. Haproxy and update it's configuration file automatically on each time new Managed node (Configured With Apache Webserver) join the inventory on the top AWS </td>
+                <td>Ansible<br> AWS</td>
+                <td><a  href="https://www.linkedin.com/posts/manisha-agrawal-a11963182_vimaldaga-righteducation-educationredefine-activity-6776238944502870016-cRRE" target="_blank">Configure Reverse Proxy</a></td>
+            </tr>
+
+            <tr>
+                <td>Create a  network Topology Setup in such a way  so that System A can  ping to two Systems System B and System C but both these systems should not be pinging each other without using any security rulee.g firewall etc.</td>
+                <td>Networking</td>
+                <td><a  href="https://www.linkedin.com/posts/manisha-agrawal-a11963182_vimaldaga-righteducation-educationredefine-activity-6781966694337392640-zTEP" target="_blank">Network Topology</a></td>
+            </tr>
+
+            <tr>
+                <td>To create an Ansible playbook that will launch ec2 instance on the AWS and retrieve newContainer IP and update the inventory and launch docker and further Configuration of Webserver inside docker Container.</td>
+                <td>AWS<br>Docker<br> Ansible</td>
+                <td><a  href="https://www.linkedin.com/posts/manisha-agrawal-a11963182_vimaldaga-righteducation-educationredefine-activity-6781905079344726016-pvGz" target="_blank">Webserver on Docker</a></td>
+            </tr>
+
+        </table>
+    </body>
 </html>
