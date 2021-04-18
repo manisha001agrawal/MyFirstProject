@@ -10,7 +10,7 @@
                 wait: true
                 group: default
                 count: 1
-                vpc_subnet_id: subnet-0ea0dded0d5d89dc6
+                vpc_subnet_id: subnet-aa1f65e6
                 assign_public_ip: yes
                 region: ap-south-1
                 state: present
