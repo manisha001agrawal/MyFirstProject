@@ -18,5 +18,4 @@
                 aws_secret_key: "{{ secret_key }}"
                 instance_tags:
                   Name: webserver
-                register: ec2
-                wait: yes
+            register: ec2
