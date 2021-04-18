@@ -3,7 +3,7 @@ Step 1 :- Create Dockerfile which will create httpd image
 step 2 :- Create index.html which contain the webserver code                                                                                                                   
 step 3 :- Launch Aws ec2 instance using ansible playbook                                                                                                                      
 step 4 :- Launch Jenkins                                                                                                                                                       
-       -> Create 3 Jobs which will run one after one automatically                                                                                                             
+       -> Create 3 Jobs which will run one after one automatically                                                                                                           
        -> First job will pull the DockerFile from github, build image and push into Docker hub                                                                                 
        -> The duty of second job is to install the docker, deamon docker service on the aws instance which launched using ansible.                                             
        -> And Finally, the duty of third job to launch docker container using that image which created by Dockerfile.                                                         
