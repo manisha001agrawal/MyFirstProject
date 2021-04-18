@@ -1,5 +1,5 @@
 # MyFirstProject
-Step 1 :- Create Dockerfile which will create httpd image
+Step 1 :- Create Dockerfile which will create httpd image                                                                                                                     
 step 2 :- Create index.html which contain the webserver code
 step 3 :- Launch Aws ec2 instance using ansible playbook
 step 4 :- Launch Jenkins
