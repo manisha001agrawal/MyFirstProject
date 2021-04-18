@@ -1,0 +1,18 @@
+- hosts: localhost
+  vars_files:
+          - login.yml
+  tasks:
+          - name: To launch ec2-instance
+            ec2_instance:
+                    region: ap-south-1
+                    key_name: "mykey"
+                    name: Os_from_ansible
+                    state: present
+                    vpc_subnet_id: subnet-0ea0dded0d5d89dc6
+                    instance_type: t2.micro
+                    security_group: default
+                    network:
+                      assign_public_ip: true
+                    image_id: ami-04b1ddd35fd71475a
+                    aws_access_key: "{{access_key}}"
+                    aws_secret_key: "{{secret_key}}"
