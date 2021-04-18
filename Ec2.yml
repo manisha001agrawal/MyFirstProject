@@ -13,6 +13,8 @@
                     security_group: default
                     network:
                       assign_public_ip: true
-                    image_id: ami-04b1ddd35fd71475a
+                    image_id: ami-0a9d27a9f4f5c0efc
                     aws_access_key: "{{access_key}}"
                     aws_secret_key: "{{secret_key}}"
+                    instance_tags:
+                      name: Myweb1
