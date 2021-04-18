@@ -19,6 +19,7 @@
                     tags:
                       Name: "Myweb1"
                     wait: yes
+          - meta: refresh_inventory
 - hosts: "{{ groups.tag_Name_Myweb1 }}"
   tasks:
           - name: copy the docker repo file
